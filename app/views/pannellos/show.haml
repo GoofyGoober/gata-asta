@@ -1,4 +1,4 @@
-%p
+%p.menu
   = link_to 'Pannelli', pannellos_path
   = '/'
   = "Pannello #{@pannello.name}"
@@ -7,5 +7,23 @@
     = image_tag(@pannello.image.url(:normal), class: 'img-responsive')
   .col-sm-10
     #container-packery
+      .grid-sizer
       - @pannello.operas.each do |o|
-        .item= link_to(image_tag(o.image.url(:big)), o)
+        .item
+          = link_to(image_tag(o.image.url(:big)), o)
+          %div(style="); width: 50px; text-align: center")= o.archive_index
+
+
+:css
+  .pallino {
+    position: absolute;
+    top: 0;
+    right:0;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;;
+    border-radius: 100px;
+    background-color: #eeee00;
+    background-color: rgba(200,200,30,0.5)
+  }

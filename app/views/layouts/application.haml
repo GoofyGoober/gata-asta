@@ -2,13 +2,12 @@
 %html
   %head
     %title GataAsta
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
-    %script(src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.min.js")
+    = stylesheet_link_tag    'application', media: 'all'
     = csrf_meta_tags
   %body
-    %br
     .container-fluid
       .row
         .col-sm-12
           = yield
+    %script(src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.min.js")
+    = javascript_include_tag 'application'
