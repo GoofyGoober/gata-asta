@@ -11,7 +11,18 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
+// require bootstrap-sprockets
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks
 //= require_tree .
+
+$('document').ready(function(){
+
+  var $container = $('#container-packery');
+  // init
+  $container.packery({
+    itemSelector: '.item',
+    gutter: 10
+  });
+
+})

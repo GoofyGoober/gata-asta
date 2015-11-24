@@ -1,0 +1,12 @@
+---
+:Opera:
+  :image:
+  - :medium
+  - :normal
+  - :thumb
+:Pannello:
+  :image:
+  - :big
+  - :medium
+  - :normal
+  - :thumb
