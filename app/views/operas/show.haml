@@ -1,0 +1,8 @@
+%p
+  = link_to 'Pannelli', @opera.pannello
+  = '/'
+  = link_to "Pannello #{@opera.name}", @opera.pannello
+  = '/'
+  = 'Opera'
+
+= image_tag @opera.image.url(:normal)

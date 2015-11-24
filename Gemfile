@@ -48,5 +48,7 @@ end
 
 gem 'paperclip', '~> 4.2'
 gem 'simple_form'
-gem 'sass-rails'
 gem 'puma'
+gem 'bootstrap-sass'
+gem 'haml-rails'
+gem 'rails_admin'
