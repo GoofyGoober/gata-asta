@@ -1,4 +1,4 @@
-%p.menu
+%p
   = link_to 'Pannelli', pannellos_path
   = '/'
   = "Pannello #{@pannello.name}"
@@ -11,7 +11,7 @@
       - @pannello.operas.each do |o|
         .item
           = link_to(image_tag(o.image.url(:big)), o)
-          %div(style="); width: 50px; text-align: center")= o.archive_index
+          .pallino= o.archive_index
 
 
 :css
@@ -25,5 +25,7 @@
     margin: 10px;;
     border-radius: 100px;
     background-color: #eeee00;
-    background-color: rgba(200,200,30,0.5)
+    background-color: rgba(200,200,30,0.9);
+    width: 50px; 
+    text-align: center
   }
