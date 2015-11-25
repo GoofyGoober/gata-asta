@@ -8,5 +8,6 @@ class Opera < ActiveRecord::Base
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
   validates :archive_index, :image, :pannello, presence: true
   belongs_to :pannello
+  has_many :details
 
 end
