@@ -5,4 +5,9 @@
   = '/'
   = 'Opera'
 
-= image_tag @opera.image.url(:normal)
+.row
+  .col-sm-8
+    = image_tag @opera.image.url(:normal), class: 'img-responsive'
+  .col-sm-4
+    - @opera.details.each do |detail|
+      = image_tag detail.image.url(:big), class: 'img-responsive'
