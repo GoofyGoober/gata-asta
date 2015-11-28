@@ -1,13 +1,10 @@
-%p
-  = link_to 'Pannelli', @opera.pannello
+%p(style="margin-bottom: 20px")
+  = link_to 'Pannelli', pannellos_path
   = '/'
   = link_to "Pannello #{@opera.pannello.name}", @opera.pannello
   = '/'
   = 'Opera'
 
 .row
-  .col-sm-8
+  .col-sm-12
     = image_tag @opera.image.url(:normal), class: 'img-responsive'
-  .col-sm-4
-    - @opera.details.each do |detail|
-      = image_tag detail.image.url(:big), class: 'img-responsive'

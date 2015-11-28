@@ -14,10 +14,15 @@
 //= require jquery_ujs
 //= require_tree .
 
-var container = document.querySelector('#container-packery');
-// init
-var pckry = new Packery( container, {
-  // options
-  itemSelector: '.item',
-  gutter: 10
-});
+
+
+function doFullScreen(){
+  console.log("YEAG")
+  $('#cover').height($(window).height())
+  console.log("window.height")
+  console.log(window.height)
+
+  $(window).resize(function(){
+    $('#cover').height($(window).height())
+  })
+}

@@ -4,9 +4,20 @@
     %title GataAsta
     = stylesheet_link_tag    'application', media: 'all'
     = csrf_meta_tags
+    = javascript_include_tag 'application'
   %body
     .container-fluid
+      #cover.row{style:"background-color: white;  background-image: url(#{@detail.image}); background-size: cover; background-position: center"}
+        .col-sm-12
+          .pull-left
+            %strong
+              = link_to 'Gatarigole', root_path, style: "padding: 20px; margin-left: -20px; display: block; color: white"
+          .pull-right
+            %div(style="padding: 20px; display: block")
+              %strong= link_to 'Pannelli', pannellos_path, style: "padding: 20px; color: white"
+              %strong= link_to 'Asta', operas_path, style: "padding: 20px; color: white; margin-right: -20px"
+      
       .row
-        .col-sm-12(style="padding-top: 10px")
+        .col-sm-12(style="padding-top: 20px")
           = yield
-    = javascript_include_tag 'application'
+    
