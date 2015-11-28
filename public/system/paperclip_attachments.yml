@@ -1,9 +1,16 @@
 ---
+:Detail:
+  :image:
+  - :big
+  - :medium
+  - :normal
+  - :thumb
 :Opera:
   :image:
   - :big
   - :medium
   - :normal
+  - :quad2
   - :thumb
 :Pannello:
   :image:

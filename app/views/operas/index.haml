@@ -1,2 +1,21 @@
-- @operas.each do |p|
-  = link_to(image_tag(p.image.url(:medium)), p)
+%table.table
+
+  - @operas.each do |p|
+    %tr
+      %td(style="width: 300px")
+        = link_to(image_tag(p.image.url(:quad2)), p)
+      %td
+        Dimensioni
+        - if p.size.present?
+          %em= p.size
+        - else
+          %em n/a
+        %br
+        Offerta attuale 
+        - if p.price.present?
+          %strong= p.price
+        - else
+          %em Da stabilire
+        %br
+        = link_to 'Dettagli', p
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151125114553) do
+ActiveRecord::Schema.define(version: 20151128140633) do
 
   create_table "details", force: :cascade do |t|
     t.integer  "opera_id"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20151125114553) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.integer  "archive_index"
+    t.text     "size"
+    t.text     "price"
   end
 
   create_table "pannellos", force: :cascade do |t|
