@@ -17,11 +17,7 @@
 
 
 function doFullScreen(){
-  console.log("YEAG")
   $('#cover').height($(window).height())
-  console.log("window.height")
-  console.log(window.height)
-
   $(window).resize(function(){
     $('#cover').height($(window).height())
   })
