@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151128140633) do
+ActiveRecord::Schema.define(version: 20151128142740) do
 
   create_table "details", force: :cascade do |t|
     t.integer  "opera_id"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20151128140633) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.boolean  "cover"
   end
 
   create_table "operas", force: :cascade do |t|

@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :random_image_cover
   def random_image_cover
-     @detail = Detail.limit(5).order("RANDOM()").first
+     @detail = Detail.where(cover: true).limit(5).order("RANDOM()").first
   end
 end
