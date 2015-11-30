@@ -7,7 +7,7 @@ class Detail < ActiveRecord::Base
     big: "600x600>"
   },  
   convert_options: {
-    normal: '-quality 80 -strip',
+    normal: '-quality 90 -strip',
     medium: '-quality 80 -strip',
     thumb: '-quality 60 -strip',
     big: '-quality 80 -strip'
