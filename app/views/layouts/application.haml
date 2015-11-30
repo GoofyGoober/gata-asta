@@ -8,7 +8,7 @@
     %meta{name:"viewport", content:"width=device-width, initial-scale=1.0"}
   %body
     .container-fluid
-      #cover.row{style:"background-color: white;  background-image: url(#{@detail.image}); background-size: cover; background-position: center"}
+      #cover.row{style:"background-color: white;  background-image: url(#{@detail.image.url(:normal)}); background-size: cover; background-position: center"}
         .col-sm-12
           .pull-left
             %strong
